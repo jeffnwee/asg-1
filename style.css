@@ -1,0 +1,33 @@
+body {
+    background-image: url(img/BABYMONSTER\ Background\ Image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#collection {
+    margin-right: 200px;
+}
+
+#social {
+    margin-left: 200px;
+}
+
+#main_logo {
+    width: 400px;
+    height: auto;
+}
+
+h2 {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+}
