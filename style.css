@@ -1,6 +1,6 @@
 body {
     background-image: url(img/BABYMONSTER\ Background\ Image.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     max-width: 100%;
     height: auto;
@@ -10,7 +10,7 @@ nav {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    margin-top: 10px;
+    margin-top: 10px;  
 }
 
 #collection {
@@ -30,4 +30,8 @@ h2 {
     font-family: "Montserrat";
     font-weight: bold;
     color: white;
+}
+
+h3 {
+    margin-top: 10000px;
 }
