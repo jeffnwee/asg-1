@@ -10,6 +10,7 @@ nav {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    align-items: center;
     margin-top: 10px;  
 }
 
@@ -24,15 +25,10 @@ nav {
 #main_logo {
     width: 400px;
     height: auto;
-    margin-top: 12px;
 }
 
 h2 {
     font-family: "Montserrat";
-    font-weight: bold;
+    font-weight: 700;
     color: white;
-}
-
-h3 {
-    margin-top: 10000px;
 }
