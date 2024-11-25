@@ -1,6 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    margin: 0;
+    height: auto;
+    background-color: transparent; /* Ensure the body has no color */
+}
+
+header {
+    position: relative;
+    z-index: 2; /* Keep the nav bar above the image */
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -8,131 +24,69 @@ nav {
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px; 
-}
-
-header {
-    position: relative;
-}
-
-#collection {
-    margin-right: 200px;
-}
-
-#social {
-    margin-left: 200px;
-}
-
-#main_logo {
-    width: 400px;
-    height: auto;
+    position: absolute; /* Make the nav not fixed, but still positioned */
+    top: 0; /* Position it at the top of the screen */
+    width: 80%;
+    padding: 20px 0;
+    z-index: 3; /* Ensure it is above the background */
+    background-color: transparent;
+    margin-top: 80px;
+    margin-left: 140px;
 }
 
 h2 {
     font-family: "Montserrat";
     font-weight: 700;
     color: white;
+    font-size: 1.5rem; /* Adjust font size */
+}
+
+.social-icons {
+    width: 30px;
+    height: 30px;
+    margin: 0; /* Add space between social icons */
+}
+
+.wrapper {
+    position: relative;
+    padding-top: 90px; /* Space for the nav bar, pushing down the content */
 }
 
 #page1 {
-    position: relative;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: auto;
-    z-index: -1;
-    top: -80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ensure the background fills the viewport */
+    object-fit: cover; /* Ensure the image stretches to fill the area */
+    object-position: top; /* Make sure the top part of the image is visible */
+    z-index: -1; /* Ensure the background stays behind the content */
 }
 
-#page2 {
-    position: relative;
+.box-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding-top: 50px;
-    background-image: linear-gradient(#e1e1e1 2px, transparent 2px), linear-gradient(to right, #e1e1e1 2px, transparent 2px);
-    background-size: 32px 32px;
-    background-color: #ffffff;
-    top: -85px;
-    gap: 20px;
+    position: absolute;
+    top: 50%;  /* Vertically center the box */
+    left: 50%;  /* Horizontally center the box */
+    transform: translate(-50%, -50%); /* Truly center the box */
+    width: 100%;
+    height: 100%;
 }
 
-.left-content, .right-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.box {
+    width: 1450px;
+    height: 1000px;
+    border: 6px solid white;
+    background-color: transparent;
+    margin-top: 1190px;
 }
 
-.left-content {
-    width: 40%;
+#about {
+    margin-right: 10%;
 }
 
-.right-content {
-    width: 60%;
-}
-
-.content-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#news_title {
-    font-family: "Montserrat";
-    font-weight: 700;
-    color: #37007c;
-    font-size: 50px;
-    margin: 0;
-    text-align: center;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
-                0 3px 0 #ccc, 0 4px 0 #ccc,
-                0 5px 0 #ccc, 0 6px 0 #ccc,
-                0 7px 0 #ccc, 0 8px 0 #ccc,
-                0 9px 0 #ccc, 0 10px 0 #ccc,
-                0 11px 0 #ccc, 0 12px 0 #ccc,
-                0 20px 30px rgba(0, 0, 0, 0.5);
-}
-
-#drip_video {
-    margin-top: 20px;
-    border-style: solid;
-    border-width: 20px;
-    border-radius: 10px;
-}
-
-.page2_content {
-    font-family: "Montserrat";
-    font-weight: 700;
-    color: #37007c;
-}
-
-#order_now {
-    font-family: "Montserrat";
-    font-weight: 700;
-    color: #37007c;
-    font-size: 50px;
-    margin: 0;
-    margin-top: 50px;
-    text-align: center;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
-                0 3px 0 #ccc, 0 4px 0 #ccc,
-                0 5px 0 #ccc, 0 6px 0 #ccc,
-                0 7px 0 #ccc, 0 8px 0 #ccc,
-                0 9px 0 #ccc, 0 10px 0 #ccc,
-                0 11px 0 #ccc, 0 12px 0 #ccc,
-                0 20px 30px rgba(0, 0, 0, 0.5);
-}
-
-#drip_link {
-    box-shadow: inset 0 0 0 0 #f913ab;
-    color: #f913ab;
-    margin: 0 -.25rem;
-    padding: 0 .25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-}
-
-#drip_link:hover {
-    box-shadow: inset 300px 0 0 0 #f913ab;
-    color: white;
+#instagram {
+    margin-left: 20%;
 }
