@@ -8,59 +8,72 @@ body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     margin: 0;
-    height: auto;
-    background-color: transparent; /* Ensure the body has no color */
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    position: relative;
-    z-index: 2; /* Keep the nav bar above the image */
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
     margin: 0;
     padding: 0;
 }
 
 nav {
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    position: absolute; /* Make the nav not fixed, but still positioned */
-    top: 0; /* Position it at the top of the screen */
-    width: 80%;
+    width: 100%;
     padding: 20px 0;
-    z-index: 3; /* Ensure it is above the background */
     background-color: transparent;
-    margin-top: 80px;
-    margin-left: 140px;
+    z-index: 3;
 }
 
-h2 {
+.nav-bar {
     font-family: "Montserrat";
     font-weight: 700;
     color: white;
-    font-size: 1.5rem; /* Adjust font size */
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#nav-box-words {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+#nav-box-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+    margin-left: 500px;
 }
 
 .social-icons {
     width: 30px;
     height: 30px;
-    margin: 0; /* Add space between social icons */
+    margin: 0 10px;
 }
 
 .wrapper {
     position: relative;
-    padding-top: 90px; /* Space for the nav bar, pushing down the content */
+    min-height: 100vh;
 }
 
 #page1 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100vh; /* Ensure the background fills the viewport */
-    object-fit: cover; /* Ensure the image stretches to fill the area */
-    object-position: top; /* Make sure the top part of the image is visible */
-    z-index: -1; /* Ensure the background stays behind the content */
+    height: 100vh; 
+    object-fit: cover;
+    object-position: top;
+    z-index: 0;
+    scroll-snap-align: start;
 }
 
 .box-container {
@@ -68,25 +81,66 @@ h2 {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50%;  /* Vertically center the box */
-    left: 50%;  /* Horizontally center the box */
-    transform: translate(-50%, -50%); /* Truly center the box */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
 }
 
 .box {
     width: 1450px;
-    height: 1000px;
+    height: 700px;
     border: 6px solid white;
     background-color: transparent;
-    margin-top: 1190px;
+    margin-top: 200px;
 }
 
-#about {
-    margin-right: 10%;
+.box-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-#instagram {
-    margin-left: 20%;
+.main-logo {
+    font-family: "Montserrat";
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    font-size: 4.5rem;
+}
+
+.album-button {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#page2 {
+    background-color: black;
+    color: white;
+    padding: 50px 20px; 
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    margin-top: 0; 
+}
+
+#page2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#page2 p {
+    font-size: 1.5rem;
+    margin: 0;
 }
