@@ -9,7 +9,6 @@ body {
     overflow-y: scroll;
     margin: 0;
     height: 100%;
-    background-color: transparent;
     display: flex;
     flex-direction: column;
 }
@@ -20,119 +19,102 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    margin: 0;
-    padding: 0;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding: 20px 0;
     background-color: transparent;
     z-index: 3;
+    margin-top: 5.5%;
+    max-width: 80%;
+    margin-left: 8.5%;
 }
 
 .nav-bar {
     font-family: "Montserrat";
     font-weight: 700;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     text-decoration: none;
 }
 
 #nav-box-words {
     display: flex;
-    flex-grow: 1;
     justify-content: space-around;
+    gap: 20%;
 }
 
 #nav-box-social {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 0;
-    margin-left: 500px;
+    gap: 15%;
 }
 
 .social-icons {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-}
-
-.wrapper {
-    position: relative;
-    min-height: 100vh;
+    width: 1.7vw;
+    height: 1.7vw;
 }
 
 #page1 {
-    width: 100%;
-    height: 100vh; 
-    object-fit: cover;
-    object-position: top;
-    z-index: 0;
+    height: 100vh;
+    background-image: url('img/BABYMONSTER Background Image.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     scroll-snap-align: start;
+    position: relative;
 }
 
-.box-container {
+#page1 .box-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
     height: 100%;
 }
 
-.box {
-    width: 1450px;
-    height: 700px;
-    border: 6px solid white;
+#page1 .box {
+    width: 85%;
+    height: 60%;
+    border: 1.3em solid white;
     background-color: transparent;
-    margin-top: 200px;
+    margin-bottom: 10%;
 }
 
 .box-content {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-    padding-bottom: 20px;
 }
 
 .main-logo {
+    margin-top: 32%;
     font-family: "Montserrat";
     font-weight: 800;
-    color: rgb(0, 0, 0);
-    font-size: 4.5rem;
+    color: black;
+    font-size: 12em;
 }
 
 .album-button {
     cursor: pointer;
     background-color: black;
     color: white;
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-align: center;
+    border: 0.1em solid white;
+    border-radius: 0.8em;
+    padding: 1% 2%;
     font-family: "Montserrat";
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 7em;
 }
 
 #page2 {
-    background-color: black;
+    background-image: linear-gradient(#EDE8E2, #C4C4CE);
     color: white;
-    padding: 50px 20px; 
+    height: 95vh;
     text-align: center;
-    z-index: 1;
-    width: 100%;
-    margin-top: 0; 
+    scroll-snap-align: start;
+    border-top: 1em solid white;
 }
 
 #page2 h2 {
@@ -142,5 +124,46 @@ nav {
 
 #page2 p {
     font-size: 1.5rem;
-    margin: 0;
+}
+
+#page2 .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#page2 .box {
+    width: 90%;
+    height: 90%;
+    border: 1.3em solid white;
+    background-color: transparent;
+}
+
+#page2 h2 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: black;
+    font-size: 8em;
+}
+
+#page2 p {
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: black;
+    font-size: 5em;
+    line-height: 1.5em;
+}
+
+#page2 .box-content {
+    text-align: left;
+    margin-top: 2.5%;
+    margin-left: 3.5%;
+}
+
+#page2 .album-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5%;
+    margin-left: 3.5%;
 }
