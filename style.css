@@ -79,7 +79,7 @@ nav {
 #page1 .box {
     width: 85%;
     height: 60%;
-    border: 1.3em solid white;
+    border: 0.5vw solid white;
     background-color: transparent;
     margin-bottom: 10%;
 }
@@ -93,19 +93,19 @@ nav {
     font-family: "Montserrat";
     font-weight: 800;
     color: black;
-    font-size: 12em;
+    font-size: 5vw;
 }
 
 .album-button {
     cursor: pointer;
     background-color: black;
     color: white;
-    border: 0.1em solid white;
-    border-radius: 0.8em;
+    border: 0.2vw solid white;
+    border-radius: 2vw;
     padding: 1% 2%;
     font-family: "Montserrat";
     font-weight: 700;
-    font-size: 7em;
+    font-size: 2.5vw;
 }
 
 #page2 {
@@ -114,16 +114,7 @@ nav {
     height: 95vh;
     text-align: center;
     scroll-snap-align: start;
-    border-top: 1em solid white;
-}
-
-#page2 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#page2 p {
-    font-size: 1.5rem;
+    border-top: 0.5vw solid white;
 }
 
 #page2 .box-container {
@@ -136,7 +127,7 @@ nav {
 #page2 .box {
     width: 90%;
     height: 90%;
-    border: 1.3em solid white;
+    border: 0.5vw solid white;
     background-color: transparent;
 }
 
@@ -144,15 +135,15 @@ nav {
     font-family: "Montserrat";
     font-weight: 700;
     color: black;
-    font-size: 8em;
+    font-size: 3vw;
 }
 
 #page2 p {
     font-family: "Montserrat";
     font-weight: 600;
     color: black;
-    font-size: 5em;
-    line-height: 1.5em;
+    font-size: 2vw;
+    line-height: 3vw;
 }
 
 #page2 .box-content {
@@ -162,8 +153,40 @@ nav {
 }
 
 #page2 .album-content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2.5%;
-    margin-left: 3.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10em; 
+    width: 100%;
+    margin-top: 5%;
+}
+
+#page2 .album-content .album {
+    display: flex; 
+    align-items: center; 
+    text-align: left;
+    padding: 0.8vw;
+}
+
+#page2 .album-content .album img {
+    max-width: 40%;
+    height: auto;
+}
+
+#page2 .album-content .album a {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    gap: 1.8vw; 
+    color: inherit; 
+    position: relative;
+}
+
+#page2 .album-content .album a p {
+    flex: 1; 
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: black;
+    font-size: 2vw;
+    text-shadow: 0.1vh 0.1vh 0.1vh rgb(74, 74, 74);
 }
