@@ -25,10 +25,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 0;
     background-color: transparent;
     z-index: 3;
-    margin-top: 5.5%;
+    margin-top: 6.3%;
     max-width: 80%;
     margin-left: 8.5%;
 }
