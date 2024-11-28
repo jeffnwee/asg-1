@@ -13,6 +13,8 @@ body {
     flex-direction: column;
 }
 
+/* Home Page */
+
 #page1 {
     height: 100vh;
     background-image: url('img/BABYMONSTER Background Image.jpg');
@@ -35,7 +37,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0;
     background-color: transparent;
     max-width: 80%;
     margin-left: 8.5%;
@@ -187,4 +189,243 @@ nav {
     color: black;
     font-size: 2vw;
     text-shadow: 0.1vh 0.1vh 0.1vh rgb(74, 74, 74);
+}
+
+/*About Page*/
+
+#page1-about {
+    height: 100vh;
+    background-image: linear-gradient(#C4C4CE, #EDE8E2);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    scroll-snap-align: start;
+    position: relative;  
+}
+
+#page1-about .box-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#page1-about .box2 {
+    width: 85%;
+    height: 60%;
+    border: 0.5vw solid white;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A69595;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.profile {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    flex-direction: row; 
+}
+
+.profile img {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+    margin-right: 3vw; 
+}
+
+.profile .text-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.profile h3, .profile p {
+    margin: 0;
+    color: white;
+}
+
+.profile p {
+    font-size: 2vw;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+.profile h3 {
+    font-size: 5vw;
+    font-style: italic;
+    font-family: "Montserrat";
+    font-weight: 800;
+}
+
+
+.carousel-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 4vw;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.carousel-btn.prev {
+    left: 5%;
+}
+
+.carousel-btn.next {
+    right: 5%;
+}
+
+/* Concert Page */
+
+#page1-concert header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 4.4%;
+    left: 0;
+}
+
+#page1-concert {
+    height: auto;
+    min-height: 100vh;
+    background-image: linear-gradient(#C4C4CE, #EDE8E2);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    scroll-snap-align: start;
+    position: relative;  
+    padding-bottom: 5%;
+}
+
+#page1-concert .box-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#page1-concert .box3 {
+    width: 85%;
+    position: relative;
+    top: 12.5vh;
+    border: 0.5vw solid white;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#5A2626, #C05151);
+}
+
+.box-content3 {
+    text-align: center;
+}
+
+#page1-concert .box-content3 .main-logo2 {
+    width: 80%;
+    height: auto;
+    margin-top: 10%;
+}
+
+#page1-concert .box-content3 h3 {
+    font-family: "Rubik Doodle Shadow";
+    font-weight: 500;
+    color: white;
+    font-size: 5vw;
+}
+
+#page1-concert .box-content3 #hello {
+    margin-top: 20%;
+}
+
+#page1-concert .box-content3 #tour-title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: white;
+    font-size: 2vw;
+}
+
+#page1-concert .box-content3 h4 {
+    font-family: "Rubik Doodle Shadow";
+    font-weight: 500;
+    color: white;
+    font-size: 3vw;
+    margin-top: 20%;
+    margin-bottom: 1%;
+}
+
+#page1-concert .box-content3 .schedule p {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: white;
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+#page1-concert .box-content3 .sponsorship p {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: white;
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+#page1-concert .box-content3 .schedule-container {
+    border-top: 0.2vw solid white;
+    border-bottom: 0.2vw solid white;
+    width: 100%;
+}
+
+#page1-concert .box-content3 .schedule {
+    border-bottom: 0.1vw solid white;
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1% 0 1%;
+}
+
+#page1-concert .box-content3 .schedule:last-child {
+    border-bottom: none;
+}
+
+#page1-concert .box-content3 .country {
+    color: #531B1B !important;
+    font-style: italic;
+    font-weight: 900 !important;
+}
+
+#page1-concert .box-content3 .sponsorship {
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.sponsorship-email {
+    color: #531B1B !important;
+    font-weight: 800 !important;
 }
