@@ -5,23 +5,56 @@ function scrollToPage2() {
     });
 }
 
-const carousel = document.querySelector('.carousel');
-const profiles = document.querySelectorAll('.profile');
-const prev_button = document.querySelector('.carousel-btn.prev');
-const next_button = document.querySelector('.carousel-btn.next');
+document.addEventListener('DOMContentLoaded', function() {
+    const issueButton = document.getElementById('issueButton');
+    const issueForm = document.getElementById('issueForm');
+    const submitIssue = document.getElementById('submitIssue');
 
-let currentIndex = 0;
+    if (issueButton && issueForm && submitIssue) {
+        issueButton.addEventListener('click', function() {
+            this.style.display = 'none';
+            issueForm.style.display = 'block';
+        });
 
-function updateCarousel() {
-    const offset = -currentIndex * 100;
-    carousel.style.transform = `translateX(${offset}%)`;
-}
+        submitIssue.addEventListener('click', function(event) {
+            event.preventDefault();
+            issueForm.style.display = 'none';
+            issueButton.style.display = 'block';
+            const submittedMessage = document.createElement('p');
+            submittedMessage.textContent = 'Request submitted';
+            submittedMessage.style.color = 'white';
+            submittedMessage.style.marginTop = '0.2vh';
+            submittedMessage.style.marginBottom = '1vh';
+            submittedMessage.style.fontSize = '1vw';
+            issueButton.parentNode.insertBefore(submittedMessage, issueButton.nextSibling);
 
-prev_button.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? profiles.length - 1 : currentIndex - 1;
-    updateCarousel();
-});
- next_button.addEventListener('click', () => {
-    currentIndex = (currentIndex === profiles.length - 1) ? 0 : currentIndex + 1;
-    updateCarousel();
+            setTimeout(() => {
+                submittedMessage.remove();
+            }, 3000);
+        });
+    }
+
+    const carousel = document.querySelector('.carousel');
+    const profiles = document.querySelectorAll('.profile');
+    const prev_button = document.querySelector('.carousel-btn.prev');
+    const next_button = document.querySelector('.carousel-btn.next');
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const offset = -currentIndex * 100;
+        carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    if (prev_button && next_button && carousel) {
+        prev_button.addEventListener('click', () => {
+            currentIndex = (currentIndex === 0) ? profiles.length - 1 : currentIndex - 1;
+            updateCarousel();
+        });
+
+        next_button.addEventListener('click', () => {
+            currentIndex = (currentIndex === profiles.length - 1) ? 0 : currentIndex + 1;
+            updateCarousel();
+        });
+    }
 });
