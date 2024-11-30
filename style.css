@@ -1,7 +1,13 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: calc(100% * (100vw / 4096));
 }
 
 body {
@@ -82,6 +88,9 @@ nav {
     border: 0.5vw solid white;
     background-color: transparent;
     margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-content {
@@ -89,11 +98,12 @@ nav {
 }
 
 .main-logo {
-    margin-top: 32%;
+    margin-top: 0;
     font-family: "Montserrat";
     font-weight: 800;
     color: black;
     font-size: 5vw;
+    text-shadow: 0.2vw 0.2vw white;
 }
 
 .album-button {
@@ -106,6 +116,12 @@ nav {
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 2.5vw;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 #page2 {
@@ -154,8 +170,8 @@ nav {
 
 #page2 .album-content {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 10em; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em; 
     width: 100%;
     margin-top: 5%;
 }
@@ -168,7 +184,7 @@ nav {
 }
 
 #page2 .album-content .album img {
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -280,7 +296,6 @@ nav {
     font-weight: 800;
 }
 
-
 .carousel-btn {
     background-color: transparent;
     border: none;
@@ -291,6 +306,11 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     color: white;
+    transition: transform 0.3s ease;
+}
+
+.carousel-btn:hover {
+    transform: translateY(-50%) scale(1.2);
 }
 
 .carousel-btn.prev {
@@ -299,6 +319,25 @@ nav {
 
 .carousel-btn.next {
     right: 5%;
+}
+
+.description {
+    font-family: "Montserrat";
+    font-weight: 800;
+    color: black;
+    margin-top: -10%;
+    width: 80%;
+    margin-left: 9%;
+}
+
+#description-title {
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: 900 !important;
+}
+
+#description-para {
+    font-size: 1vw;
 }
 
 /* Concert Page */
@@ -408,6 +447,15 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 1% 0 1%;
+}
+
+#page1-concert .box-content3 a {
+    text-decoration: none;
+}
+
+#page1-concert .box-content3 .sponsorship .sponsorship-email:hover {
+    text-decoration: none;
+    color: black !important;
 }
 
 #page1-concert .box-content3 .schedule:last-child {
@@ -520,4 +568,463 @@ footer .copyright {
     font-weight: 500;
     font-size: 0.7vw;
     margin-top: 1vh;
+}
+
+#issueButton {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#issueButton:hover {
+    background-color: black;
+    box-shadow: inset 0 0 0 2px white; 
+    color: white;
+}
+
+#submitIssue {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#submitIssue:hover {
+    background-color: black;
+    box-shadow: inset 0 0 0 2px white;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 2560px) {
+    html {
+        font-size: calc(100% * (2560 / 4096));
+    }
+
+    .nav-bar {
+        font-size: 1.2vw;
+    }
+
+    .social-icons {
+        width: 2vw;
+        height: 2vw;
+        padding-right: 1vw;
+    }
+
+    .box {
+        height: 70%;
+        margin-top: 5%;
+    }
+
+    .box-content {
+        margin-top: 20%;
+    }   
+
+    .main-logo {
+        font-size: 4vw;
+    }
+
+    .album-button {
+        font-size: 2vw;
+    }
+
+    #page2 h2 {
+        font-size: 2.5vw;
+    }
+
+    #page2 p {
+        font-size: 1vw;
+        line-height: 5vh;
+    }
+
+    #page2 .album-content {
+        grid-template-columns: repeat(2, 1fr); 
+        margin-top: -1vh;
+    }
+
+    #page2 .album-content .album a p {
+        font-size: 1vw;
+    }
+
+    #page2 .album-content .album img {
+        width: 5vw;
+        height: auto;
+    }
+    
+    #page2 {
+        padding-bottom: 5%;
+    }
+
+    #page1-concert nav {
+        margin-top: -5vh;
+    }
+
+    .box3 {
+        margin-top: 2vh;
+    }
+
+    .box2 {
+        margin-top: 10.5vh;
+    }
+
+    .profile {
+        padding: 10%;
+    }
+}
+
+@media (max-height: 1440px) {
+    html {
+        font-size: calc(100% * (2560 / 4096));
+    }
+
+    .nav-bar {
+        font-size: 1.2vw;
+    }
+
+    .social-icons {
+        width: 2vw;
+        height: 2vw;
+        padding-right: 1vw;
+    }
+
+    .box {
+        height: 70%;
+        margin-top: 5%;
+    }
+
+    .box-content {
+        margin-top: 20%;
+    }   
+
+    .main-logo {
+        font-size: 4vw;
+    }
+
+    .album-button {
+        font-size: 2vw;
+    }
+
+    #page2 h2 {
+        font-size: 2.5vw;
+    }
+
+    #page2 p {
+        font-size: 1vw;
+        line-height: 5vh;
+    }
+
+    #page2 .album-content {
+        grid-template-columns: repeat(2, 1fr); 
+        margin-top: -1vh;
+    }
+
+    #page2 .album-content .album a p {
+        font-size: 1vw;
+    }
+
+    #page2 .album-content .album img {
+        width: 5vw;
+        height: auto;
+    }
+    
+    #page2 {
+        padding-bottom: 5%;
+    }
+
+    #page1-concert nav {
+        margin-top: -5vh;
+    }
+
+    .box3 {
+        margin-top: 2vh;
+    }
+
+    .box2 {
+        margin-top: 10.5vh;
+    }
+
+    .profile {
+        padding: 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: calc(100% * (1024 / 4096));
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: #000000;
+        top: 0;
+        position: fixed; 
+        min-width: 100%;
+        z-index: 1000;
+        right: 0;
+    }
+
+    #page1-concert {
+        height: auto;
+        padding-bottom: 15vh;
+    }
+
+    #nav-box-words, #nav-box-social {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #nav-box-social {
+        margin-right: 10%;
+    }
+
+    #nav-box-words {
+        margin-left: 5%;
+    }
+
+    .nav-bar {
+        margin: 2vw 0;
+        font-size: 2vw;
+    }
+
+    .social-icons {
+        margin: 2vw 0;
+        height: 1.7vh;
+        width: auto;
+    }
+
+    .box {
+        height: 70%; 
+        margin-top: -5vh; 
+    }
+
+    .main-logo {
+        font-size: 7vw;
+        margin-top: 80%;
+    }
+
+    .album-button {
+        font-size: 4vw;
+        padding: 8px 16px;
+    }
+
+    #page1-about .box2 {
+        height: 50%;
+    }
+
+    #page2 h2 {
+        font-size: 5vw;
+    }
+
+    #page2 p {
+        font-size: 3vw;
+        line-height: 2vh;
+    }
+
+    #page2 .album-content {
+        grid-template-columns: 2, 1fr; 
+        margin-top: 5%;
+        gap: 3.5%;
+    }
+
+    #page2 .album-content .album a p {
+        font-size: 2vw;
+    }
+
+    #page2 .album-content .album img {
+        width: 20vw; 
+        height: auto;
+    }
+
+    #page1-concert nav {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        margin-top: -0.05%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: calc(100% * (768 / 4096));
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: #000000;
+        top: 0;
+        position: fixed; 
+        min-width: 100%;
+        z-index: 1000;
+        right: 0;
+    }
+
+    #page1-concert {
+        height: auto;
+        padding-bottom: 15vh;
+    }
+
+    #nav-box-words, #nav-box-social {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #nav-box-social {
+        margin-right: 10%;
+    }
+
+    #nav-box-words {
+        margin-left: 5%;
+    }
+
+    .nav-bar {
+        margin: 2vw 0;
+        font-size: 2vw;
+    }
+
+    .social-icons {
+        margin: 2vw 0;
+        height: 1vh;
+        width: auto;
+    }
+
+    .box {
+        height: 70%; 
+        margin-top: -5vh; 
+    }
+
+    .main-logo {
+        font-size: 7vw;
+        margin-top: 80%;
+    }
+
+    .album-button {
+        font-size: 4vw;
+        padding: 8px 16px;
+    }
+    
+    #page1-about .box2 {
+        height: 40%;
+    }
+
+    #page2 h2 {
+        font-size: 5vw;
+    }
+
+    #page2 p {
+        font-size: 3vw;
+        line-height: 2vh;
+    }
+
+    #page2 .album-content {
+        grid-template-columns: 2, 1fr; 
+        margin-top: 5%;
+        gap: 3.5%;
+    }
+
+    #page2 .album-content .album a p {
+        font-size: 2vw;
+    }
+
+    #page2 .album-content .album img {
+        width: 20vw; 
+        height: auto;
+    }
+
+    #page1-concert nav {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        margin-top: -0.05%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: calc(100% * (480 / 4096));
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: #000000;
+        top: 0;
+        position: fixed; 
+        min-width: 100%;
+        z-index: 1000;
+        right: 0;
+    }
+
+    #nav-box-words, #nav-box-social {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #nav-box-social {
+        margin-right: 10%;
+    }
+
+    #nav-box-words {
+        margin-left: 5%;
+    }
+
+    .nav-bar {
+        margin: 2vw 0;
+        font-size: 2vw;
+    }
+
+    .social-icons {
+        margin: 2vw 0;
+        height: 0.7vh;
+        width: auto;
+    }
+
+    .box {
+        height: 70%; 
+        margin-top: -5vh; 
+    }
+
+    .main-logo {
+        font-size: 7vw;
+        margin-top: 80%;
+    }
+
+    .album-button {
+        font-size: 4vw;
+        padding: 8px 16px;
+    }
+
+    #page1-about .box2 {
+        height: 30%;
+    }
+
+    #page2 h2 {
+        font-size: 5vw;
+    }
+
+    #page2 p {
+        font-size: 3vw;
+        line-height: 2vh;
+    }
+
+    #page2 .album-content {
+        grid-template-columns: 1fr; 
+        margin-top: 5%;
+        gap: 3.5%;
+    }
+
+    #page2 .album-content .album a p {
+        font-size: 3vw;
+    }
+
+    #page2 .album-content .album img {
+        width: 25vw; 
+        height: auto;
+    }
+
+    #page1-concert nav {
+        top: 0;
+        position: fixed; 
+        width: 100%; 
+        z-index: 1000; 
+        margin-top: -0.05%;
+    }
 }
