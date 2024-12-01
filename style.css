@@ -935,6 +935,18 @@ footer .copyright {
         z-index: 1000;
         margin-top: -0.05%;
     }
+
+    #description-para {
+        inline-size: 50%;
+        overflow-wrap: break-word;
+        font-size: 1.75vw;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        margin-top: -25vh;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1026,5 +1038,17 @@ footer .copyright {
         width: 100%; 
         z-index: 1000; 
         margin-top: -0.05%;
+    }
+
+    #description-para {
+        inline-size: 50%;
+        overflow-wrap: break-word;
+        font-size: 2vw;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        margin-top: -30vh;
     }
 }
