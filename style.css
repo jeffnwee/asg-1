@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: calc(100% * (100vw / 4096));
+    font-size: calc(100% * (4096 / 4096));
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 
 #page1 {
     height: 100vh;
-    background-image: url('img/BABYMONSTER Background Image.jpg');
+    background-image: url('img/BABYMONSTER-Background-Image.jpg');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -496,7 +496,7 @@ footer .issues {
     margin-top: 2vh;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     margin-left: 2vw;
 }
 
@@ -539,7 +539,7 @@ footer .contact-us {
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     right: 0;
     margin-right: 30%;
     margin-top: 2vh;
@@ -817,7 +817,7 @@ footer .copyright {
     }
 
     #page2 .album-content {
-        grid-template-columns: 2, 1fr; 
+        grid-template-columns: 2fr 1fr; 
         margin-top: 5%;
         gap: 3.5%;
     }
@@ -914,7 +914,7 @@ footer .copyright {
     }
 
     #page2 .album-content {
-        grid-template-columns: 2, 1fr; 
+        grid-template-columns: 2fr 1fr; 
         margin-top: 5%;
         gap: 3.5%;
     }
