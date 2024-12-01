@@ -37,6 +37,8 @@ header {
     left: 0;
 }
 
+/* Navigation Bar */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -72,6 +74,8 @@ nav {
     width: 1.7vw;
     height: 1.7vw;
 }
+
+/* Center Box in Home Page */
 
 #page1 .box-container {
     display: flex;
@@ -121,6 +125,8 @@ nav {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
+
+/* Album Section in Home Page */
 
 #page2 {
     background-image: linear-gradient(#EDE8E2, #C4C4CE);
@@ -205,7 +211,7 @@ nav {
     text-shadow: 0.1vh 0.1vh 0.1vh rgb(74, 74, 74);
 }
 
-/*About Page*/
+/* About Page */
 
 #page1-about {
     height: 100vh;
@@ -234,6 +240,8 @@ nav {
     align-items: center;
     background-color: #A69595;
 }
+
+/* Members' Profile in About Page */
 
 .carousel-container {
     display: flex;
@@ -319,6 +327,8 @@ nav {
     right: 5%;
 }
 
+/* Description in About Page */
+
 .description {
     font-family: "Montserrat";
     font-weight: 800;
@@ -383,11 +393,15 @@ nav {
     text-align: center;
 }
 
+/* Logo in Concert Page */
+
 #page1-concert .box-content3 .main-logo2 {
     width: 80%;
     height: auto;
     margin-top: 10%;
 }
+
+/* Sub-Headings in Concert Page */
 
 #page1-concert .box-content3 h3 {
     font-family: "Rubik Doodle Shadow";
@@ -415,6 +429,8 @@ nav {
     margin-top: 20%;
     margin-bottom: 1%;
 }
+
+/* Schedules in Concert Page */
 
 #page1-concert .box-content3 .schedule p {
     font-family: "Montserrat";
@@ -486,6 +502,8 @@ footer {
     flex-direction: row;
 }
 
+/* Enquiries Form in Footer */
+
 footer .issues {
     font-family: "Montserrat";
     font-weight: 700;
@@ -543,6 +561,8 @@ footer .contact-us {
     margin-top: 2vh;
 }
 
+/* Find Us Section in Footer */
+
 footer .social-footer {
     display: flex;
     flex-direction: row;
@@ -567,6 +587,8 @@ footer .copyright {
     font-size: 0.7vw;
     margin-top: 1vh;
 }
+
+/* Effects for the hovering of buttons */
 
 #issueButton {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
