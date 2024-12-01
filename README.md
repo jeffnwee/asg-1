@@ -1,9 +1,8 @@
-# asg-1
-BABYMONSTER Website
+# **Assignment 1 BABYMONSTER Website**
 
 This website allows users to view and check out the K-Pop group, BABYMONSTER's new albums and/or music. There is also a concert page, which allows users to check when is the group having concert tours and where they will be held at. This will provide convenience to the user as it is all in one page. Users can also find out more about BABYMONSTER if they are new to the group as they can check out the about page.
 
-Design Process
+## Design Process
 
 User Story 1
 
@@ -27,9 +26,11 @@ User Story 4
 
     As a user that encountered an issue on the website, I want to be able to write in to the developer, so that they can fix the issue(s) that I am facing.
 
-Wireframe : https://www.figma.com/proto/c1admpdngGdXlZLI9uHeNz/ID_S10267683F_JeffreyAng_Assg1_wireframe?node-id=0-1&t=GoKFl640hADF9UR8-1
+Wireframe
+    
+    https://www.figma.com/proto/c1admpdngGdXlZLI9uHeNz/ID_S10267683F_JeffreyAng_Assg1_wireframe?node-id=0-1&t=GoKFl640hADF9UR8-1
 
-Features
+## Features
 
     Feature 1 - allows users to instantly scroll to the album section by pressing the "LISTEN TO OUR ALBUM" button.
 
@@ -41,7 +42,7 @@ Features
 
     Feature 5 - allows user to write an issue or any enquiries to the website developer, so that the developer can know the issue(s).
 
-Technologies Used
+## Technologies Used
 
     Languages
 
@@ -59,7 +60,7 @@ Technologies Used
     Google Fonts
     Usage: Used to include custom fonts like "Montserrat", "Open Sans", "Rubik Doodle Shadow", and "Rubik Glitch" for better typography.
 
-Testing
+## Testing
 
     1. Album Links
         i. At the home page, click on the "LISTEN  TO OUR ALBUM" button
@@ -86,18 +87,18 @@ Testing
 
     When testing, the error message would appear indefinitely if user press the submit button over and over again. For the members' profiles, the other members did not show up as I put 'overflow: hidden;' under the wrong section.
 
-Credits
+## Credits
 
-Content
+## Content
 
     The text for about us was copied from https://en.wikipedia.org/wiki/Babymonster
     The layout for the concert page was inspired from https://ygfamily.com/en/artists/babymonster/concert
 
-Media 
+## Media 
 
     The photos used in the about us site were obtained from https://kprofiles.com/babymonster-members-profile/
     The photos used in the home page were obtained from https://en.wikipedia.org/wiki/Babymonster and https://www.reddit.com/r/BABYMONSTER/comments/1bsuouv/240401_babymonster_for_1st_mini_album_babymons7er/?rdt=42927
 
-Acknowledgements
+## Acknowledgements
 
     I received inspiration for this project from https://ygfamily.com/en/artists/babymonster/ and https://www.wix.com/website-template/view/html/1694?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fmusic%2Fband&tpClick=view_button&esi=e969332a-56a6-4508-901f-54ce1bc8247d
